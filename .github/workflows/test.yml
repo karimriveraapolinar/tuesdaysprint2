@@ -26,4 +26,6 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest  --cov=tests/test_converter.py --cov-report=term-missing
+          # PIPELINE BUG 3: Wrong test path -- 'test/' does not exist.
+          # The correct directory is 'tests/' (with an s).
+          pytest tests/ --cov=src --cov-report=term-missing
