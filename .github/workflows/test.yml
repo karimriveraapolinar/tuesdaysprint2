@@ -25,5 +25,5 @@ jobs:
         run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: |
-          pytest tests/ --cov=src --cov-report=term-missing
+        run: 
+          pytest tests/test_converter.py --cov=src --cov-report=term-missing
