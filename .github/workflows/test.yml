@@ -26,6 +26,5 @@ jobs:
 
       - name: Run tests
         run: |
-          # PIPELINE BUG 3: Wrong test path -- 'test/' does not exist.
-          # The correct directory is 'tests/' (with an s).
+        
           pytest tests/ --cov=src --cov-report=term-missing
